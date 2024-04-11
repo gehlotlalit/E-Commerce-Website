@@ -12,6 +12,7 @@ import AllProduct from "./pages/allproduct/AllProduct";
 import Signup from "./pages/registration/Signup";
 import Login from "./pages/registration/Login";
 import UserDashboard from "./pages/user/UserDashBoard";
+import AdminDashboard from "./pages/admin/AdminDashboard";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/user-dashboard" element={<UserDashboard />} />
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />
 
         </Routes>
       </Router>
