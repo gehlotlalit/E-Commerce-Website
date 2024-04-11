@@ -1,4 +1,6 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import ProductDetail from '../../Components/admin/ProductDetails';
+import OrderDetail from '../../Components/admin/OrderDetail';
 
 const AdminDashboard = () => {
     return (
@@ -115,17 +117,17 @@ const AdminDashboard = () => {
 
                                     </div>
                                     <h2 className="title-font font-medium text-3xl text-pink-400 fonts1" >10</h2>
-                                    <p className=" text-pink-500  font-bold" >Total Order</p>
+                                    <p className=" text-pink-500  font-bold" >Total User</p>
                                 </div>
                             </Tab>
                         </TabList>
 
                         <TabPanel>
-                            All Product
+                            <ProductDetail/>
                         </TabPanel>
 
                         <TabPanel>
-                            All Order
+                            <OrderDetail/>
                         </TabPanel>
 
                         <TabPanel>
