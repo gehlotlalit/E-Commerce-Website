@@ -1,6 +1,7 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import ProductDetail from '../../Components/admin/ProductDetails';
 import OrderDetail from '../../Components/admin/OrderDetails';
+import UserDetail from '../../Components/admin/UserDetails';
 
 const AdminDashboard = () => {
     return (
@@ -23,8 +24,8 @@ const AdminDashboard = () => {
                         </div>
                         {/* text  */}
                         <div className="">
-                            <h1 className=" text-center text-lg text-pink-500"><span className=" font-bold">Name :</span> Kamal Nayan Upadhyay</h1>
-                            <h1 className=" text-center text-lg text-pink-500"><span className=" font-bold">Email :</span> test@gmail.com</h1>
+                            <h1 className=" text-center text-lg text-pink-500"><span className=" font-bold">Name :</span> Lalit Malviya Gehlot</h1>
+                            <h1 className=" text-center text-lg text-pink-500"><span className=" font-bold">Email :</span> malviya566@gmail.com</h1>
                         </div>
                     </div>
                 </div>
@@ -131,7 +132,7 @@ const AdminDashboard = () => {
                         </TabPanel>
 
                         <TabPanel>
-                            All User
+                            <UserDetail/>
                         </TabPanel>
                     </Tabs>
                 </div>
