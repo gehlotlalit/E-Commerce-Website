@@ -1,5 +1,5 @@
-# 1. react installation
-# 2. Tailwind css installation
+## 1. react installation
+### 2. Tailwind css installation
 # 3. install Material Tailwind
 # 4. Create Folder Structure - Navbar, Footer, Layout
 # 5. Create Pages - Home Page, NoPage
