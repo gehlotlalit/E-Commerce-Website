@@ -14,4 +14,5 @@
 ### 14. Create All Product Page
 ### 15. Create Login & Signup Page
 ### 16. Create User dashboard Page
-### 17. Create Admin Dashboard - install React Tabs through - npm i react-tabs
+### 17. Create Admin Dashboard - install React Tabs through - npm i react-tabs inside create ProductDetails, OrderDetails, UserDetails
+### 18. Create Add & Update Product Page
