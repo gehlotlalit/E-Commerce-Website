@@ -16,4 +16,6 @@
 ### 16. Create User dashboard Page
 ### 17. Create Admin Dashboard - install React Tabs through - npm i react-tabs inside create ProductDetails, OrderDetails, UserDetails
 ### 18. Create Add & Update Product Page
-### 19.Firebase Setup
+### 19. Firebase Setup
+### 20. Create Context Api
+### 21. Create Signup & Loginup

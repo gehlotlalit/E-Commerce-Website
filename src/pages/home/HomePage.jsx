@@ -2,10 +2,12 @@ import Category from "../../Components/category/Category";
 import HeroSection from "../../Components/heroSection/HeroSection";
 import HomePageProductCard from "../../Components/homePageProductCard/HomePageProductCard";
 import Layout from "../../Components/layout/Layout";
+import Loader from "../../Components/loader/Loader";
 import Testimonial from "../../Components/testimonial.jsx/Testimonial";
 import Track from "../../Components/track/Track";
 
 const  HomePage = () => {
+
   return (
     <Layout>
         <HeroSection/>
@@ -13,6 +15,7 @@ const  HomePage = () => {
         <HomePageProductCard/>
         <Track/>
         <Testimonial/>
+        <Loader/>
     </Layout>
   )
 }
