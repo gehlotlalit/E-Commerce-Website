@@ -38,13 +38,14 @@ function MyState({ children }) {
     }
 
     useEffect(() => {
-        getAllProductFunction();
+        getAllProductFunction();     
     }, []);
     return (
         <MyContext.Provider value={{
             loading,
             setLoading,
-            getAllProduct
+            getAllProduct,
+            getAllProductFunction
         }}>
             {children}
         </MyContext.Provider>
