@@ -31,7 +31,7 @@ const AllProduct = () => {
                                 <div key={index} className="p-4 w-full md:w-1/4">
                                     <div className="h-full border border-gray-300 rounded-xl overflow-hidden shadow-md cursor-pointer">
                                         <img
-                                        onClick={()=> navigate('/productinfo')}
+                                        onClick={()=> navigate(`/productinfo/${id}`)}
                                             className="lg:h-80  h-96 w-full"
                                             src={productImageUrl}
                                             alt="blog"

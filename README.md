@@ -28,3 +28,4 @@
 ### 27. Create Delete Product Function
 ### 28. Get Product In Home Page
 ### 29. Create Get All Product 
+### 30. Create Get Single Product On Product Info Page
