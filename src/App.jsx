@@ -1,24 +1,25 @@
+import { Toaster } from "react-hot-toast";
 import {
-  BrowserRouter as Router,
   Route,
+  BrowserRouter as Router,
   Routes,
 } from "react-router-dom";
+import ScrollTop from "./Components/scrollTop/ScrollTop";
+import MyState from "./context/myState";
+import AddProductPage from "./pages/admin/AddProductPage";
+import AdminDashboard from "./pages/admin/AdminDashboard";
+import UpdateProductPage from "./pages/admin/UpdateProductPage";
+import AllProduct from "./pages/allproduct/AllProduct";
+import CartPage from "./pages/cart/CartPage";
 import HomePage from "./pages/home/HomePage";
 import NoPage from "./pages/noPage/NoPage";
 import ProductInfo from "./pages/productInfo/ProductInfo";
-import ScrollTop from "./Components/scrollTop/ScrollTop";
-import CartPage from "./pages/cart/CartPage";
-import AllProduct from "./pages/allproduct/AllProduct";
-import Signup from "./pages/registration/Signup";
 import Login from "./pages/registration/Login";
+import Signup from "./pages/registration/Signup";
 import UserDashboard from "./pages/user/UserDashBoard";
-import AdminDashboard from "./pages/admin/AdminDashboard";
-import AddProductPage from "./pages/admin/AddProductPage";
-import UpdateProductPage from "./pages/admin/UpdateProductPage";
-import MyState from "./context/myState";
-import { Toaster } from "react-hot-toast";
 import { ProtectedRouteForAdmin } from "./protectedRoute/ProtectedRouteForAdmin";
 import { ProtectedRouteForUser } from "./protectedRoute/ProtectedRouteForUser";
+import CategoryPage from "./pages/category/CategoryPage";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/allproduct" element={<AllProduct />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/category/:categoryname" element={<CategoryPage/>}/>
           <Route path="/user-dashboard" element={
            <ProtectedRouteForUser>
             <UserDashboard />
