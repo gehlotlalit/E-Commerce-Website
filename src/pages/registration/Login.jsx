@@ -117,14 +117,14 @@ const Login = () => {
                     <button
                         type='button'
                         onClick={userLoginFunction}
-                        className='bg-pink-500 hover:bg-pink-600 w-full text-white text-center py-2 font-bold rounded-md '
+                        className='bg-gray-600 hover:bg-black w-full text-white text-center py-2 font-bold rounded-md '
                     >
                         Login
                     </button>
                 </div>
 
                 <div>
-                    <h2 className='text-black'>Don't Have an account <Link className=' text-pink-500 font-bold' to={'/signup'}>Signup</Link></h2>
+                    <h2 className='text-bg-black'>Don't Have an account <Link className=' text-pink-500 font-bold' to={'/signup'}>Signup</Link></h2>
                 </div>
 
             </div>

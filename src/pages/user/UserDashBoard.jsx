@@ -55,7 +55,7 @@ const UserDashboard = () => {
                                 <div className="p-8">
                                     <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-1">
                                         <div className="mb-4">
-                                            <div className="text-sm font-semibold text-black">Order Id</div>
+                                            <div className="text-sm font-semibold text-bg-black">Order Id</div>
                                             <div className="text-sm font-medium text-gray-900">#74557994327</div>
                                         </div>
 

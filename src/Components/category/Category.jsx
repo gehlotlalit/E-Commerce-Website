@@ -45,7 +45,7 @@ const Category = () => {
                         {category.map((item, index) => {
                             return (
                                 <div key={index} className="px-3 lg:px-10">
-                                    <div onClick={() => navigate(`/category/${item.name}`)} className=" w-16 h-16 lg:w-24 lg:h-24 max-w-xs rounded-full  bg-pink-500 transition-all hover:bg-pink-400 cursor-pointer mb-1 "  >
+                                    <div onClick={() => navigate(`/category/${item.name}`)} className=" w-16 h-16 lg:w-24 lg:h-24 max-w-xs rounded-full  transition-all hover:bg-[rgb(235,226,247)] cursor-pointer mb-1 "  >
                                         <div className="flex justify-center mb-12">
                                             <img src={item.image} alt="img" />
                                         </div>

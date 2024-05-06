@@ -36,7 +36,7 @@ const ProductInfo = () => {
     return (
         <Layout>
             
-            <section className="py-5 lg:py-16 font-poppins dark:bg-gray-800">
+            <section className="py-5 lg:py-16 font-poppins dark:bg-gray-600-800">
                 {loading ?
                     <>
                         <div className="flex justify-center items-center">
@@ -142,7 +142,7 @@ const ProductInfo = () => {
 
 
                                             <button
-                                                className="w-full px-4 py-3 text-center text-pink-600 bg-pink-100 border border-pink-600  hover:bg-pink-600 hover:text-gray-100  rounded-xl"
+                                                className="w-full px-4 py-3 text-center text-white bg-gray-500 border border-gray-600  hover:bg-black hover:text-gray-100  rounded-xl"
                                             >
                                                 Add to cart
                                             </button>

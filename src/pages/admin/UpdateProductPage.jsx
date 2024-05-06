@@ -209,7 +209,7 @@ const UpdateProductPage = () => {
                         <button
                             onClick={updateProduct}
                             type='button'
-                            className='bg-pink-500 hover:bg-pink-600 w-full text-white text-center py-2 font-bold rounded-md '
+                            className='bg-gray-600 hover:bg-black w-full text-white text-center py-2 font-bold rounded-md '
                         >
                             Update Product
                         </button>

@@ -30,3 +30,4 @@
 ### 29. Create Get All Product 
 ### 30. Create Get Single Product On Product Info Page
 ### 31. Create Category Page
+### 32. Redux Toolkit Setup

@@ -61,7 +61,7 @@ const CategoryPage = () => {
                                                             </h1>
 
                                                             <div className="flex justify-center ">
-                                                                <button className=" bg-pink-500 hover:bg-pink-600 w-full text-white py-[4px] rounded-lg font-bold">
+                                                                <button className=" bg-gray-600 hover:bg-black w-full text-white py-[4px] rounded-lg font-bold">
                                                                     Add To Cart
                                                                 </button>
                                                             </div>
@@ -78,7 +78,7 @@ const CategoryPage = () => {
                                         <div className="flex justify-center">
                                             <img className=" mb-2" src="https://cdn-icons-png.flaticon.com/128/2748/2748614.png" alt="" />
                                         </div>
-                                        <h1 className=" text-black text-xl">No {categoryname} product found</h1>
+                                        <h1 className=" text-bg-black text-xl">No {categoryname} product found</h1>
                                     </div>
                                 }
 

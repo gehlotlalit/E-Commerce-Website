@@ -34,7 +34,7 @@ const products = [
         price: '₹2219 ',
         originalPrice: '₹999',
         discount: '78% off',
-        color: 'Black',
+        color: 'bg-black',
         imageSrc:
             'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fd17b420-b388-4c8a-aaaa-e0a98ddf175f/dunk-high-retro-shoe-DdRmMZ.png',
     },
@@ -71,7 +71,7 @@ const CartPage = () => {
                                                     <div>
                                                         <div className="flex justify-between">
                                                             <h3 className="text-sm">
-                                                                <a href={product.href} className="font-semibold text-black">
+                                                                <a href={product.href} className="font-semibold text-bg-black">
                                                                     {product.name}
                                                                 </a>
                                                             </h3>
@@ -160,7 +160,7 @@ const CartPage = () => {
                                 <div className="px-2 pb-4 font-medium text-green-700">
                                 <div className="flex gap-4 mb-6">
                                     <button
-                                        className="w-full px-4 py-3 text-center text-gray-100 bg-pink-600 border border-transparent dark:border-gray-700 hover:border-pink-500 hover:text-pink-700 hover:bg-pink-100 rounded-xl"
+                                        className="w-full px-4 py-3 text-center text-gray-100 bg-black border border-transparent dark:border-gray-700 hover:border-pink-500 hover:text-pink-700 hover:bg-pink-100 rounded-xl"
                                     >
                                         Buy now
                                     </button>

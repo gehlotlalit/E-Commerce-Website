@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div>
             {/* footer  */}
-            <footer className="text-gray-600 body-font bg-pink-600">
+            <footer className="text-gray-600 body-font bg-black">
                 {/* main  */}
                 <div className="container px-5 py-5 mx-auto flex items-center sm:flex-row flex-col">
                     {/* logo  */}
@@ -27,7 +27,7 @@ const Footer = () => {
                     {/* media icon  */}
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                         {/* facebook  */}
-                        <a className="text-gray-100 cursor-pointer">
+                        <a className="text-gray-100 cursor-pointer" href="http://facebook.com" target="relative">
                             <svg
                                 fill="currentColor"
                                 strokeLinecap="round"
@@ -41,7 +41,7 @@ const Footer = () => {
                         </a>
 
                         {/* twitter  */}
-                        <a className="ml-3 text-gray-100 cursor-pointer">
+                        <a className="ml-3 text-gray-100 cursor-pointer" href="http://facebook.com" target="relative">
                             <svg
                                 fill="currentColor"
                                 strokeLinecap="round"
@@ -50,12 +50,12 @@ const Footer = () => {
                                 className="w-5 h-5"
                                 viewBox="0 0 24 24"
                             >
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
                             </svg>
                         </a>
 
                         {/* instagram  */}
-                        <a className="ml-3 text-gray-100 cursor-pointer">
+                        <a className="ml-3 text-gray-100 cursor-pointer" href="http://facebook.com" target="relative">
                             <svg
                                 fill="none"
                                 stroke="currentColor"
@@ -71,7 +71,7 @@ const Footer = () => {
                         </a>
 
                         {/* linkedIn  */}
-                        <a className="ml-3 text-gray-100 cursor-pointer">
+                        <a className="ml-3 text-gray-100 cursor-pointer" href="https://www.linkedin.com/in/lalit-malviya-1168b3266/" target="relative">
                             <svg
                                 fill="currentColor"
                                 stroke="currentColor"
