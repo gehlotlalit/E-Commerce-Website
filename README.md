@@ -32,3 +32,4 @@
 ### 31. Create Category Page
 ### 32. Redux Toolkit Setup
 ### 33. Create Add To Cart In Product Card
+### 34. Get CartItem On CartPage
