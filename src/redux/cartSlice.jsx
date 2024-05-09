@@ -16,7 +16,7 @@ export const cartSlice = createSlice({
             state = state.map(item => {
                 if (item.id === action.payload) {
                     item.quantity++;
-                }
+                } 
                 return item;
             });
         },
