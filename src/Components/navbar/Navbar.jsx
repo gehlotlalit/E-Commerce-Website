@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import SearchBar from "../searchBar/SearchBar";
-import Logo from './logo.png'
+import { useSelector } from "react-redux";
+
 
 const Navbar = () => {
     // get user from localStorage 
@@ -15,9 +16,12 @@ const Navbar = () => {
         navigate("/login")
     }
 
+    // CartItems
+    const cartItems = useSelector((state) => state.cart);
+
     // navList Data
     const navList = (
-        <ul className="flex lg:space-x-5 text-white font-medium text-md px-5 sm:space-x-6">
+        <ul className="flex space-x-3 text-white font-medium text-md px-5 ">
             {/* Home */}
             <li>
                 <Link to={'/'}>Home</Link>
@@ -52,29 +56,28 @@ const Navbar = () => {
             {user && <li className=" cursor-pointer" onClick={logout}>
                 logout
             </li>}
-            {/*bg-black*/}
+
             {/* Cart */}
             <li>
                 <Link to={'/cart'}>
-                    Cart(0)
+                    Cart({cartItems.length})
                 </Link>
             </li>
         </ul>
     )
     return (
-        <nav className="bg-black sticky top-0">
+        <nav className="bg-pink-600 sticky top-0">
             {/* main  */}
             <div className="lg:flex lg:justify-between items-center py-3 lg:px-3 ">
                 {/* left  */}
-                <div className="left py-3 lg:py-0  lg:flex">
-                    <img src={Logo} alt="logo" className="h-10 w-10 mr-2 "/>
+                <div className="left py-3 lg:py-0">
                     <Link to={'/'}>
-                        <h2 className=" font-bold text-white text-2xl text-center mt-2">E-Bharat</h2>
+                        <h2 className=" font-bold text-white text-2xl text-center">E-Bharat</h2>
                     </Link>
                 </div>
 
                 {/* right  */}
-                <div className="right flex justify-center mb-4 lg:mb-0 ">
+                <div className="right flex justify-center mb-4 lg:mb-0">
                     {navList}
                 </div>
 

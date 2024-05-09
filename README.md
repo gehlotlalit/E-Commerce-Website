@@ -31,3 +31,4 @@
 ### 30. Create Get Single Product On Product Info Page
 ### 31. Create Category Page
 ### 32. Redux Toolkit Setup
+### 33. Create Add To Cart In Product Card
