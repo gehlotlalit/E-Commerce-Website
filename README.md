@@ -34,3 +34,4 @@
 ### 33. Create Add To Cart In Product Card
 ### 34. Get CartItem On CartPage
 ### 39. Add To Cart In Product Info Page
+### 40. Buy Now Function
