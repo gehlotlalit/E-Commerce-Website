@@ -33,3 +33,4 @@
 ### 32. Redux Toolkit Setup
 ### 33. Create Add To Cart In Product Card
 ### 34. Get CartItem On CartPage
+### 39. Add To Cart In Product Info Page

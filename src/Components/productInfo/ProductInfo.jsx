@@ -1,42 +1,42 @@
-import { useContext, useState } from "react";
-import Layout from "../../Components/layout/Layout";
+import { useContext, useEffect, useState } from "react";
+import Layout from "../../components/layout/Layout";
 import myContext from "../../context/myContext";
-import { useParams } from "react-router"; 
+import { useParams } from "react-router";
 import { fireDB } from "../../firebase/FirebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
-import Loader from "../../Components/loader/Loader";
+import Loader from "../../components/loader/Loader";
 
 const ProductInfo = () => {
     const context = useContext(myContext);
     const { loading, setLoading } = context;
- 
+
     const [product, setProduct] = useState('')
 
     const { id } = useParams()
 
-    console.log(id)
+    // console.log(product)
 
     // getProductData
     const getProductData = async () => {
         setLoading(true)
         try {
-            const productTemp = await getDoc(doc(fireDB, "products", id));
-            setProduct(productTemp.data());
-            setLoading(false);
+            const productTemp = await getDoc(doc(fireDB, "products", id))
+            // setProduct(productTemp.data());
+            setProduct({...productTemp.data(), id : productTemp.id});
+            setLoading(false)
         } catch (error) {
             console.log(error)
             setLoading(false)
         }
     }
 
-    console.log(product)
-    // useEffect(() => {
-        
-    // }, [])
+
+    useEffect(() => {
+        getProductData()
+    }, [])
     return (
         <Layout>
-            getProductData()
-            <section className="py-5 lg:py-16 font-poppins dark:bg-gray-600-800">
+            <section className="py-5 lg:py-16 font-poppins dark:bg-gray-800">
                 {loading ?
                     <>
                         <div className="flex justify-center items-center">
@@ -142,7 +142,7 @@ const ProductInfo = () => {
 
 
                                             <button
-                                                className="w-full px-4 py-3 text-center text-pink-600 bg-pink-100 border border-pink-600  hover:bg-black hover:text-gray-100  rounded-xl"
+                                                className="w-full px-4 py-3 text-center text-pink-600 bg-pink-100 border border-pink-600  hover:bg-pink-600 hover:text-gray-100  rounded-xl"
                                             >
                                                 Add to cart
                                             </button>

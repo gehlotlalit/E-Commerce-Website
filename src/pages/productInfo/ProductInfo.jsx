@@ -1,42 +1,67 @@
 import { useContext, useEffect, useState } from "react";
 import Layout from "../../Components/layout/Layout";
 import myContext from "../../context/myContext";
-import { useParams } from "react-router"; 
+import { useParams } from "react-router";
 import { fireDB } from "../../firebase/FirebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
 import Loader from "../../Components/loader/Loader";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, deleteFromCart } from "../../redux/cartSlice";
+import toast from "react-hot-toast";
 
 const ProductInfo = () => {
     const context = useContext(myContext);
     const { loading, setLoading } = context;
- 
-    const [product, setProduct] = useState('')
 
+    const [product, setProduct] = useState('')
+    console.log(product)
+  
     const { id } = useParams()
 
-    console.log(id)
+    console.log(product)
 
-    
+    // getProductData
     const getProductData = async () => {
         setLoading(true)
         try {
-            const productTemp = await getDoc(doc(fireDB, "products", id));
-            setProduct(productTemp.data());
-            setLoading(false);
+            const productTemp = await getDoc(doc(fireDB, "products", id))
+            // console.log({...productTemp.data(), id : productTemp.id})
+            setProduct({...productTemp.data(), id : productTemp.id})
+            setLoading(false)
         } catch (error) {
             console.log(error)
             setLoading(false)
         }
     }
 
-    console.log(product)
+    const cartItems = useSelector((state) => state.cart);
+    const dispatch = useDispatch();
+
+    const addCart = (item) => {
+        // console.log(item)
+        dispatch(addToCart(item));
+        toast.success("Add to cart")
+    }
+
+    const deleteCart = (item) => {
+        dispatch(deleteFromCart(item));
+        toast.success("Delete cart")
+    }
+
+    // console.log(cartItems)
+
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+    }, [cartItems])
+
+
     useEffect(() => {
         getProductData()
+
     }, [])
     return (
         <Layout>
-            
-            <section className="py-5 lg:py-16 font-poppins dark:bg-gray-600-800">
+            <section className="py-5 lg:py-16 font-poppins dark:bg-gray-800">
                 {loading ?
                     <>
                         <div className="flex justify-center items-center">
@@ -139,12 +164,28 @@ const ProductInfo = () => {
 
                                         <div className="mb-6 " />
                                         <div className="flex flex-wrap items-center mb-6">
-
-
+                                            {cartItems.some((p) => p.id === product.id)
+                                                ?
+                                                <button
+                                                    onClick={() => deleteCart(product)}
+                                                    className="w-full px-4 py-3 text-center text-white bg-red-500 border border--600  hover:bg-red-600 hover:text-gray-100  rounded-xl"
+                                                >
+                                                    Delete to cart
+                                                </button>
+                                                :
+                                                <button
+                                                    onClick={() => addCart(product)}
+                                                    className="w-full px-4 py-3 text-center text-pink-600 bg-pink-100 border border-pink-600  hover:bg-pink-600 hover:text-gray-100  rounded-xl"
+                                                >
+                                                    Add to cart
+                                                </button>
+                                            }
+                                        </div>
+                                        <div className="flex gap-4 mb-6">
                                             <button
-                                                className="w-full px-4 py-3 text-center text-white bg-gray-500 border border-gray-600  hover:bg-black hover:text-gray-100  rounded-xl"
+                                                className="w-full px-4 py-3 text-center text-gray-100 bg-pink-600 border border-transparent dark:border-gray-700 hover:border-pink-500 hover:text-pink-700 hover:bg-pink-100 rounded-xl"
                                             >
-                                                Add to cart
+                                                Buy now
                                             </button>
                                         </div>
                                     </div>
