@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
 import MyContext from './myContext';
-import { collection, onSnapshot, orderBy, query } from 'firebase/firestore';
+import { collection, deleteDoc, doc, onSnapshot, orderBy, query } from 'firebase/firestore';
 import { fireDB } from '../firebase/FirebaseConfig';
+import toast from 'react-hot-toast';
 
 function MyState({ children }) {
     // Loading State 
@@ -68,6 +69,21 @@ function MyState({ children }) {
         }
     }
 
+
+    // Delete oder Function
+    const deleteProduct = async (id) => {
+        setLoading(true)
+        try {
+            await deleteDoc(doc(fireDB, 'order', id))
+            toast.success('Order Deleted successfully')
+            getAllOrderFunction();
+            setLoading(false)
+        } catch (error) {
+            console.log(error)
+            setLoading(false)
+        }
+    }
+
     useEffect(() => {
         getAllProductFunction();
         getAllOrderFunction();
@@ -78,7 +94,8 @@ function MyState({ children }) {
             setLoading,
             getAllProduct,
             getAllProductFunction,
-            getAllOrder
+            getAllOrder,
+            deleteProduct
         }}>
             {children}
         </MyContext.Provider>
