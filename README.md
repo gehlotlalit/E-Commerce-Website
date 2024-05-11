@@ -8,7 +8,7 @@
 ### 8. Create Hero Section
 ### 9. Create Category
 ### 10. Create Testimonial Component
-### 11. Create ProductInfo Page - Create Route inside App.jsx & useNavigate prduct inside HomePageProduct
+### 11. Create ProductInfo Page - Create Route inside App.jsx & useNavigate prduct inside   HomePageProduct
 ### 12. Create ScrollTop Component
 ### 13. Create CartPage
 ### 14. Create All Product Page
@@ -36,3 +36,4 @@
 ### 39. Add To Cart In Product Info Page
 ### 40. Buy Now Function
 ### 41. Display Order Page On User DashBoard
+### 42. Display Order Page On Admin DashBoard
