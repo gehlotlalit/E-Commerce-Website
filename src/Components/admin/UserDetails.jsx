@@ -4,6 +4,7 @@ import myContext from "../../context/myContext";
 const UserDetail = () => {
     const context = useContext(myContext);
     const { getAllUser } = context;
+    console.log(getAllUser)
     return (
         <div>
             <div>
