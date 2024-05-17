@@ -37,7 +37,7 @@ const HomePageProductCard = () => {
         <div className="mt-10">
             {/* Heading  */}
             <div className="">
-                <h1 className=" text-center mb-5 text-2xl font-semibold">Bestselling Products</h1>
+                <h1 className=" text-center mb-2 text-2xl font-semibold">Bestselling Products</h1>
             </div>
 
             {/* main  */}
@@ -73,7 +73,7 @@ const HomePageProductCard = () => {
                                                 ?
                                                 <button
                                                     onClick={() => deleteCart(item)}
-                                                    className=" bg-red-700 hover:bg-pink-600 w-full text-white py-[4px] rounded-lg font-bold">
+                                                    className=" bg-gray-600 w-full hover:bg-black text-white py-[4px] rounded-lg font-bold">
                                                     Delete To Cart
                                                 </button>
 
@@ -81,7 +81,7 @@ const HomePageProductCard = () => {
 
                                                 <button
                                                     onClick={() => addCart(item)}
-                                                    className=" bg-pink-500 hover:bg-pink-600 w-full text-white py-[4px] rounded-lg font-bold">
+                                                    className=" bg-black hover:bg-gray-600 w-full text-white py-[4px] rounded-lg font-bold">
                                                     Add To Cart
                                                 </button>
                                             }

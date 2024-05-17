@@ -1,10 +1,10 @@
 import { useContext, useEffect, useState } from "react";
-import Layout from "../../components/layout/Layout";
+import Layout from "../../Components/layout/Layout";
 import myContext from "../../context/myContext";
 import { useParams } from "react-router";
 import { fireDB } from "../../firebase/FirebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
-import Loader from "../../components/loader/Loader";
+import Loader from "../../Components/loader/Loader";
 
 const ProductInfo = () => {
     const context = useContext(myContext);
@@ -142,7 +142,7 @@ const ProductInfo = () => {
 
 
                                             <button
-                                                className="w-full px-4 py-3 text-center text-pink-600 bg-pink-100 border border-pink-600  hover:bg-pink-600 hover:text-gray-100  rounded-xl"
+                                                className="w-full px-4 py-3 text-center bg-black hover:bg-gray-600 text-white  hover:text-gray-100  rounded-xl"
                                             >
                                                 Add to cart
                                             </button>

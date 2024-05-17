@@ -80,11 +80,11 @@ const Signup = () => {
         <div className='flex justify-center items-center h-screen'>
             {loading && <Loader/>}
             {/* Login Form  */}
-            <div className="login_Form bg-pink-50 px-8 py-6 border border-pink-100 rounded-xl shadow-md">
+            <div className="login_Form bg-gray-200 px-8 py-6 border border-gray-500 rounded-xl shadow-md">
 
                 {/* Top Heading  */}
                 <div className="mb-5">
-                    <h2 className='text-center text-2xl font-bold text-pink-500 '>
+                    <h2 className='text-center text-2xl font-bold text-black '>
                         Signup
                     </h2>
                 </div>
@@ -101,7 +101,7 @@ const Signup = () => {
                                 name: e.target.value
                             })
                         }}
-                        className='bg-pink-50 border border-pink-200 px-2 py-2 w-96 rounded-md outline-none placeholder-pink-200'
+                        className='bg-white border border-gray-500 px-2 py-2 w-96 rounded-md outline-none placeholder-text-gray-500'
                     />
                 </div>
 
@@ -117,7 +117,7 @@ const Signup = () => {
                                 email: e.target.value
                             })
                         }}
-                        className='bg-pink-50 border border-pink-200 px-2 py-2 w-96 rounded-md outline-none placeholder-pink-200'
+                        className='bg-white border border-gray-500 px-2 py-2 w-96 rounded-md outline-none placeholder-text-gray-500'
                     />
                 </div>
 
@@ -133,7 +133,7 @@ const Signup = () => {
                                 password: e.target.value
                             })
                         }}
-                        className='bg-pink-50 border border-pink-200 px-2 py-2 w-96 rounded-md outline-none placeholder-pink-200'
+                        className='bg-white border border-gray-500 px-2 py-2 w-96 rounded-md outline-none placeholder-text-gray-500'
                     />
                 </div>
 
@@ -149,7 +149,7 @@ const Signup = () => {
                 </div>
 
                 <div>
-                    <h2 className='text-bg-black'>Have an account <Link className=' text-pink-500 font-bold' to={'/login'}>Login</Link></h2>
+                    <h2 className='text-bg-black'>Have an account <Link className=' text-black font-bold' to={'/login'}>Login</Link></h2>
                 </div>
 
             </div>
