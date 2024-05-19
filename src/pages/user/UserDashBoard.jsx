@@ -72,7 +72,7 @@ const UserDashboard = () => {
                                         // console.log('item', item);
                                         const { id, date, quantity, price, title, productImageUrl, category } = item
                                         // console.log('order', order)
-                                        const { status } = order
+                                        // const { status } = order
                                         return (
                                             <div key={index} className="mt-5 flex flex-col overflow-hidden rounded-xl border border-pink-100 md:flex-row">
                                                 {/* main 3  */}

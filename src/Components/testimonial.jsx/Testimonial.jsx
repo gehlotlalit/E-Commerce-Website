@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import photo from "./Fd.png"
+import photo from "./Fd.jpg"
 const Testimonial = () => {
     return (
         // <div>
@@ -105,7 +105,7 @@ const Testimonial = () => {
                                 </div>
 
                                 <blockquote className="flex-1 mt-8">
-                                    <p className="text-lg leading-relaxed text-gray-900 font-pj">“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”</p>
+                                    <p className="text-lg leading-relaxed text-gray-900 font-pj">“I was very impressed with the quality of the product I received. It was exactly what I was hoping for.” “The customer service at this company is excellent"</p>
                                 </blockquote>
                             </div>
 
@@ -151,7 +151,7 @@ const Testimonial = () => {
                                 </div>
 
                                 <blockquote className="flex-1 mt-8">
-                                    <p className="text-lg leading-relaxed text-gray-900 font-pj">“Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.”</p>
+                                    <p className="text-lg leading-relaxed text-gray-900 font-pj">"I have been using meesho for a long time. It is only good for local items not the brands. More than half of the orders were returned due to quality issue."</p>
                                 </blockquote>
                             </div>
 
@@ -197,7 +197,7 @@ const Testimonial = () => {
                                 </div>
 
                                 <blockquote className="flex-1 mt-8">
-                                    <p className="text-lg leading-relaxed text-gray-900 font-pj">“I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.”</p>
+                                    <p className="text-lg leading-relaxed text-gray-900 font-pj">"Every purchase starts a new scraping process, so you can have a report containing the analysis of the most recent reviews"</p>
                                 </blockquote>
                             </div>
 

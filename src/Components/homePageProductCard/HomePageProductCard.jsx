@@ -81,7 +81,7 @@ const HomePageProductCard = () => {
 
                                                 <button
                                                     onClick={() => addCart(item)}
-                                                    className=" bg-black hover:bg-gray-600 w-full text-white py-[4px] rounded-lg font-bold">
+                                                    className=" bg-black border border-transparent dark:border-gray-700 hover:border-gray-500 hover:text-pink-700 hover:bg-black-100 w-full text-white py-[4px] rounded-lg font-bold">
                                                     Add To Cart
                                                 </button>
                                             }

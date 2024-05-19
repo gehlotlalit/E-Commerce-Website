@@ -185,7 +185,7 @@ const AddProductPage = () => {
                         <button
                             onClick={addProductFunction}
                             type='button'
-                            className='bg-gray-600 hover:bg-black w-full text-white text-center py-2 font-bold rounded-md '
+                            className='  hover:text-pink-700 hover:bg-black-100 bg-black hover:bg-black w-full text-white text-center py-2 font-bold rounded-md '
                         >
                             Add Product
                         </button>

@@ -175,7 +175,7 @@ const ProductInfo = () => {
                                                 :
                                                 <button
                                                     onClick={() => addCart(product)}
-                                                    className="w-full px-4 py-3 text-center text-white bg-black border  hover:bg-gray-500 hover:text-gray-100  rounded-xl"
+                                                    className="w-full px-4 py-3 text-gray-100 bg-black border border-transparent dark:border-gray-700 hover:border-gray-500 hover:text-pink-700 hover:bg-black-100 rounded-xl"
                                                 >
                                                     Add to cart
                                                 </button>
