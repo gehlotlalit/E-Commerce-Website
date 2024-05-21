@@ -63,7 +63,7 @@ const Footer = () => {
                         </a>
 
                         {/* instagram  */}
-                        <a className="ml-3 text-gray-100 cursor-pointer" href="http://facebook.com" target="relative">
+                        <a className="ml-3 text-gray-100 cursor-pointer" href="https://www.instagram.com/malviya._.lalit?igsh=M2pqZ3gxcnlmZWJz" target="relative">
                             <svg
                                 fill="none"
                                 stroke="currentColor"
