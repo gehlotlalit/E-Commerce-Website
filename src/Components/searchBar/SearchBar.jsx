@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import myContext from "../../context/myContext";
 import { useNavigate } from "react-router";
-
+import "./searchBar.css"
 
 const SearchBar = () => {
     const context = useContext(myContext);
@@ -15,7 +15,7 @@ const SearchBar = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="">
+        <div className="searchbar">
             {/* search input  */}
             <div className="input flex justify-center">
                 <input
@@ -23,7 +23,7 @@ const SearchBar = () => {
                     placeholder='Search here'
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                    className=' bg-gray-200 placeholder-gray-400 rounded-lg px-2 py-2 w-96 lg:w-96 md:w-96 outline-none text-black '
+                    className=' bg-gray-200 placeholder-gray-400 rounded-lg px-2 py-2 w-96 lg:w-80 md:w-80 outline-none text-black '
                 />
             </div>
 

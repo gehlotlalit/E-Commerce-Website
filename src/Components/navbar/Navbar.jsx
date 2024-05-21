@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import Logo from './logo.png'
 import { useState } from 'react';
 import HamburgerIcon from './icon.png'
+import "./Navbar.css"
 
 const Navbar = () => {
     // get user from localStorage 
@@ -79,26 +80,37 @@ const Navbar = () => {
     );
 
     return (
-        <nav className="bg-black sticky top-0 z-10">
+        <nav className="bg-black sticky top-0 z-10 ">
             <div className="lg:flex lg:justify-between items-center py-3 lg:px-3 ">
 
                 {/* Logo */}
-                <div className="left lg:flex py-3 lg:py-0">
-                <span className="flex md:justify-center sm:justify-center "><img src={Logo} alt="E-Bharat" className="h-9 mr-3" /></span>
-                    <Link to={'#'}>
-                        <h2 className="font-bold text-white text-2xl text-center mt-0 ">
-                            
-                            
-                            E-Bharat
-                            
-                            </h2>
-                {/* Hamburger Menu */}
-                <div className="inline lg:hidden mr-4 absolute right-1 mb-2">
-                    <button onClick={toggleMenu} className="text-white focus:outline-none">
+                <div className="left sm:flex lg:flex py-3 lg:py-0">
+
+             <div className="sm:flex lg:flex md:flex navimage" >
+
+                <img  src={Logo} alt="E-Bharat" className="h-9 mr-3 " />
+
+                    <Link to={'/'}>
+                        <h2 className="font-bold text-white text-2xl text-center inline  "> E-Bharat </h2>
+                    </Link>
+
+                    <div className="inline md:-hidden lg:hidden mr-4 absolute right-1 mb-2 ">
+                <button onClick={toggleMenu} className="text-white focus:outline-none">
                        <img src={HamburgerIcon} alt="HamburgerIcon" className="h-7 w-7 "/>
                     </button>
+                   
+  
                 </div>
-                    </Link>
+             </div>
+                   
+                {/* Hamburger Menu */}
+                <div className="inline lg:hidden mr-4 absolute right-1 mb-2 hamburgerfirst">
+                <button onClick={toggleMenu} className="text-white focus:outline-none hamburgerfirst">
+                       <img src={HamburgerIcon} alt="HamburgerIcon" className="h-7 w-7 hamburgerfirst"/>
+                    </button>
+                   
+  
+                </div>
                 </div>
 
                 {/* Right */}

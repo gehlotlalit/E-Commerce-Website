@@ -113,7 +113,7 @@ const Testimonial = () => {
                                 <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://avatars.githubusercontent.com/u/118448246?v=4://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png" alt="" />
                                 <div className="ml-4">
                                     <p className="text-base font-bold text-gray-900 font-pj">Mukesh Choudhary</p>
-                                    <p className="mt-0.5 text-sm font-pj text-gray-600">Mern Stack Developer</p>
+                                    <p className="mt-0.5 text-sm font-pj text-gray-600">Product Manager</p>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +159,7 @@ const Testimonial = () => {
                                 <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://avatars.githubusercontent.com/u/125145128?s=400&u=24c74ea36288cb6e14c14a2463dd1439cd0aa080&v=4" alt="" />
                                 <div className="ml-4">
                                     <p className="text-base font-bold text-gray-900 font-pj">Lalit Malviya</p>
-                                    <p className="mt-0.5 text-sm font-pj text-gray-600">Freelance React Developer</p>
+                                    <p className="mt-0.5 text-sm font-pj text-gray-600">Co-Founder of E-Bharat</p>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +205,7 @@ const Testimonial = () => {
                                 <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src={photo} alt="" />
                                 <div className="ml-4">
                                     <p className="text-base font-bold text-gray-900 font-pj">Jenny Wilson</p>
-                                    <p className="mt-0.5 text-sm font-pj text-gray-600">Fashion Designer</p>
+                                    <p className="mt-0.5 text-sm font-pj text-gray-600">CEO of E-Bharat</p>
                                 </div>
                             </div>
                         </div>

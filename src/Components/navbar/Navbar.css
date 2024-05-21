@@ -1,0 +1,11 @@
+
+
+@media  (max-width: 542px) {
+    .navimage{
+        display: flex;
+        /* justify-content: center; */
+    }
+    .hamburgerfirst{
+        display: none;
+    }
+  }

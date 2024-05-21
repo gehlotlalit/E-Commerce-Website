@@ -4,6 +4,7 @@ import UserDetail from '../../Components/admin/UserDetails'
 import ProductDetail from '../../Components/admin/ProductDetails'
 import { useContext } from 'react';
 import myContext from '../../context/myContext';
+import Navbar from '../../Components/navbar/Navbar';
 
 const AdminDashboard = () => {
     const user = JSON.parse(localStorage.getItem('users'));
@@ -13,6 +14,9 @@ const AdminDashboard = () => {
     return (
         <div className=''>
             {/* Top */}
+            <Navbar/>
+
+            
             <div className="top mb-5 px-5 mt-5">
                 <div className=" bg-gray-300 py-5 border border-gray-500 rounded-lg">
                     <h1 className=" text-center text-2xl font-bold text-black">Admin Dashboard</h1>
@@ -164,6 +168,7 @@ const AdminDashboard = () => {
                     </Tabs>
                 </div>
             </div>
+            
         </div>
     );
 }
