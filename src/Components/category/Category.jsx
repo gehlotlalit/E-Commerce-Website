@@ -3,35 +3,35 @@ import { useNavigate } from "react-router";
 const category = [
     {
         image: 'https://cdn-icons-png.flaticon.com/256/4359/4359963.png',
-        name: 'fashion'
+        name: 'Fashion'
     },
     {
         image: 'https://cdn-icons-png.flaticon.com/256/11833/11833323.png',
-        name: 'shirt'
+        name: 'Shirt'
     },
     {
         image: 'https://cdn-icons-png.flaticon.com/256/8174/8174424.png',
-        name: 'jacket'
+        name: 'Jacket'
     },
     {
         image: 'https://cdn-icons-png.flaticon.com/256/7648/7648246.png',
-        name: 'mobile'
+        name: 'Mobile'
     },
     {
         image: 'https://cdn-icons-png.flaticon.com/256/12142/12142416.png',
-        name: 'laptop'
+        name: 'Laptop'
     },
     {
         image: 'https://cdn-icons-png.flaticon.com/256/10686/10686553.png',
-        name: 'shoes'
+        name: 'Shoes'
     },
     {
         image: 'https://cdn-icons-png.flaticon.com/256/12114/12114279.png',
-        name: 'home'
+        name: 'Home'
     },
     {
         image: 'https://cdn-icons-png.flaticon.com/256/11946/11946316.png',
-        name: 'books'
+        name: 'Books'
     }
 ]
 
@@ -51,7 +51,7 @@ const Category = () => {
                                         </div>
                                     </div>
 
-                                    <h1 className=' text-sm lg:text-lg text-center font-medium title-font '>{item.name}</h1>
+                                    <h1 className='text-sm lg:text-lg text-center font-bold title-font '>{item.name}</h1>
                                 </div>
                             )
                         })}
