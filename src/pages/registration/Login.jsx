@@ -32,8 +32,8 @@ const Login = () => {
         // setLoading(true);
         try {
             const users = await signInWithEmailAndPassword(auth, userLogin.email, userLogin.password);
+            console.log("Trying to Login")
             console.log(users.user)
-
             try {
                 const q = query(
                     collection(fireDB, "user"),
@@ -49,8 +49,11 @@ const Login = () => {
                     })
                     toast.success("Login Successfully");
                     setLoading(false);
+                    console.log("Role")
+                    console.log(user.role)
                     if(user.role === "user") {
                         navigate('/user-dashboard');
+                        console.log("User Navigated to Dashboard")
                     }else{
                         navigate('/admin-dashboard');
                     }

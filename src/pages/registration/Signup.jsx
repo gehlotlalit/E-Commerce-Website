@@ -20,7 +20,7 @@ const Signup = () => {
         name: "",
         email: "",
         password: "",
-        role: "Admin"
+        role: "user"
     });
 
     /**========================================================================
@@ -53,7 +53,8 @@ const Signup = () => {
                     }
                 )
             }
-
+             console.log("User")
+             console.log(user)
             // create user Refrence
             const userRefrence = collection(fireDB, "user")
 
@@ -65,7 +66,7 @@ const Signup = () => {
                 email: "",
                 password: ""
             })
-
+          
             toast.success("Signup Successfully");
 
             setLoading(false);
