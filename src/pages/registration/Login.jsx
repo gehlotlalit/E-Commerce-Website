@@ -32,7 +32,7 @@ const Login = () => {
         // setLoading(true);
         try {
             const users = await signInWithEmailAndPassword(auth, userLogin.email, userLogin.password);
-            // console.log(users.user)
+            console.log(users.user)
 
             try {
                 const q = query(
